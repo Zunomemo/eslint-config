@@ -1,0 +1,23 @@
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
+import stylistic from "@stylistic/eslint-plugin";
+
+const config = [
+    eslint.configs.recommended,
+    ...tseslint.configs.recommended,
+    stylistic.configs["stylistic/recommended"],
+    {
+        plugins: {
+            "@stylistic": stylistic
+        },
+        rules: {
+            "@typescript-eslint/explicit-function-return-type": "off",
+            "@stylistic/indent": ["error", 4],
+            "@stylistic/comma-dangle": ["warn", "never"],
+            "@stylistic/quotes": ["warn", "double"],
+            "@stylistic/semi": ["warn", "always"],
+        }
+    }
+]
+
+export default config;
