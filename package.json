@@ -2,6 +2,7 @@
   "name": "@zunomemo/eslint-config",
   "version": "2024.1.0",
   "description": "An ESLint default configuration for the Zunomemo organization.",
+  "main": "index.js",
   "author": {
     "name": "Saryu",
     "email": "yuriko.onozuka@proton.me"
@@ -14,9 +15,6 @@
   "files": [
     "index.js"
   ],
-  "exports": {
-    ".": "./index.js"
-  },
   "keywords": [
     "eslint",
     "eslintconfig",
