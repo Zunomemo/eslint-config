@@ -5,7 +5,7 @@ import stylistic from "@stylistic/eslint-plugin";
 const config = [
     eslint.configs.recommended,
     ...tseslint.configs.recommended,
-    stylistic.configs["stylistic/recommended"],
+    stylistic.configs["recommended-flat"],
     {
         plugins: {
             "@stylistic": stylistic
@@ -15,7 +15,7 @@ const config = [
             "@stylistic/indent": ["error", 4],
             "@stylistic/comma-dangle": ["warn", "never"],
             "@stylistic/quotes": ["warn", "double"],
-            "@stylistic/semi": ["warn", "always"],
+            "@stylistic/semi": ["warn", "always"]
         }
     }
 ]
